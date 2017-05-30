@@ -42,7 +42,7 @@ int main(void)
 	if (srv_sfd_udp < 0)
 		err_exit("could not create udp socket\n");
 
-	printf("waiting for connections on upd port %s\n", PORT_SRV);
+	printf("waiting for connections on udp port %s\n", PORT_SRV);
 
 	fd_set sfd_set;
 	FD_ZERO(&sfd_set);
